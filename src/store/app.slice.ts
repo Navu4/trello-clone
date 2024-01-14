@@ -1,7 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import {
   AppReducerInitialStateType,
-  BoardColumnsDataType,
   BoardDataType,
   CardDataType,
   UserDataType,

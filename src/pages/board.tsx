@@ -12,7 +12,7 @@ import BoardSection from "../components/board";
 import { currentSelectBoard, resetCurrentBoard } from "../store/app.slice";
 
 interface Props {}
-const Board = (props: Props) => {
+const Board = ({}: Props) => {
   const params = useParams();
   const dispatch = useDispatch();
   const dashboardInfo = useSelector((state) => state.appReducer.dashboard);

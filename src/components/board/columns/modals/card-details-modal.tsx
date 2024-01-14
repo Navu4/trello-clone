@@ -1,4 +1,4 @@
-import React, { FC, lazy, useState } from "react";
+import { FC, lazy, useState } from "react";
 import {
   Modal,
   ModalBody,
@@ -21,7 +21,6 @@ import {
   AiOutlineDelete,
   AiOutlineClose,
   AiOutlineLaptop,
-  AiOutlineRight,
   AiOutlineCheck,
 } from "react-icons/ai";
 import { GrTextAlignFull } from "react-icons/gr";
@@ -29,7 +28,6 @@ import { AiOutlineDown } from "react-icons/ai";
 import {
   CardDataType,
   Label,
-  UserDataType,
 } from "../../../../types/app.constants";
 import CardLabel from "./card-labels-menu";
 import { useAppSelector } from "../../../../store/hook";

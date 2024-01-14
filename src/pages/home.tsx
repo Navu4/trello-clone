@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { ROUTES } from "../utils/app.constants";
 
 interface Props {}
-const Home = (props: Props) => {
+const Home = ({}: Props) => {
   const navigate = useNavigate();
   const dashboardInfo = useSelector((state) => state.appReducer.dashboard);
 

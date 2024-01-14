@@ -16,11 +16,6 @@ describe("Project Board Tests", () => {
 
 function openFirstProject() {
     cy.url().should("include", "/dashboard");
-
-    let dataId;
-    cy.get(".boards-cards button").then(($div) => {
-      dataId = Cypress.$($div).attr("data-btn");
-    });
     cy.get(".boards-cards button").click();
     cy.url().should("include", `/board/`);
 }

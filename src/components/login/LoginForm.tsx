@@ -16,7 +16,7 @@ import { LoginState } from "../../types/app.constants";
 import { ROUTES } from "../../utils/app.constants";
 
 interface Props {}
-const LoginForm = (props: Props) => {
+const LoginForm = ({}: Props) => {
     const toast = useToast();
     const {
       register,

@@ -1,5 +1,5 @@
 import CryptoJS from "crypto-js";
-import { BoardDataType, DashboardType, UserDataType } from "../types/app.constants";
+import { DashboardType, UserDataType } from "../types/app.constants";
 
 export const getUsersData = () => {
   const localData = localStorage.getItem("usersData");

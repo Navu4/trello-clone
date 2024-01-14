@@ -19,7 +19,7 @@ import { useEffect, useState } from "react";
 import { DashboardService } from "../../service/dashboard";
 
 interface Props {}
-const DashboardComp = (props: Props) => {
+const DashboardComp = ({}: Props) => {
   const navigate = useNavigate();
   const [projects, setProjects] = useState<ProjectStateType>({
     data: [],

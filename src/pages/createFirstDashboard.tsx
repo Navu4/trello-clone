@@ -9,14 +9,13 @@ import { createNewProject } from "../store/app.slice";
 import {
   DashboardFirstInformation,
   DashboardIntroSection,
-  ProjectListInformation,
 } from "../components/dashboard/firstDashboardComp";
 import { useEffect } from "react";
 import SideBanner from "../components/layout/sidebanner";
 import Header from "../components/header";
 
 interface Props {}
-const CreateFirstDashboard = (props: Props) => {
+const CreateFirstDashboard = ({}: Props) => {
   const navigator = useNavigate();
   const [searchParams] = useSearchParams();
   const flag = searchParams.get("flag");

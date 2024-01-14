@@ -15,14 +15,11 @@ import { FiEye, FiEyeOff } from "react-icons/fi";
 import { useForm } from "react-hook-form";
 import { UserDataType } from "../types/app.constants";
 import { SignupService } from "../service/signup";
-import { useNavigate } from "react-router-dom";
 import SignInLayout from "../components/layout/signinLayout";
 import { ROUTES } from "../utils/app.constants";
 
 export default function SignUp() {
   const toast = useToast();
-  const navigate = useNavigate();
-
   const {
     register,
     handleSubmit,
